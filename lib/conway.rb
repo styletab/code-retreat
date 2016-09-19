@@ -10,6 +10,14 @@ require 'pry'
       # write code to set cells marked in initial_state to alive = true
       initial_state.each {|i| @cells[i].come_alive}
     end
+
+# no idea how this function works yet but i'm pretty sure it lives here
+# happens every time World "takes a turn"
+    def tick
+      # checks every cell in @cells agains the 4 conditions
+      # marks the ones that need to be flipped, maybe in a separate array?
+      # after checking all cells, repaints the whole board with new state
+    end
   end
 
 
