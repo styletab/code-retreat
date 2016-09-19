@@ -29,6 +29,24 @@ require 'pry'
     def come_alive
       @alive = true
     end
+
+    # what other behaviors does Cell have?
+
+    # if fewer than 2 neighboars are alive = die
+    def under_populate
+    end
+
+    # if 3 or more neighboard are alive = die
+    def over_populate
+    end
+
+    # if 2 or 3 neighbors are alive = stay alive
+    def static
+    end
+
+    # on a dead cell, if alive neighbors equals 3 = come alive!
+    def birth
+    end
   end
 
   binding.pry
